@@ -17,19 +17,49 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 address {
   font-style: normal;
 }
 /* Base */
+* {
+  box-sizing: border-box;
+}
 .list {
   list-style: none;
+}
+.section {
+  padding: 48px 0;
+}
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 .uppercase {
   text-transform: uppercase;
 }
 .accent {
   color: var(--color-brand-light);
+}
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 /* Button */
 .button {
@@ -39,6 +69,7 @@ address {
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
+  padding: 16px 32px;
 }
 .button:hover,
 .button:focus {
@@ -68,7 +99,12 @@ address {
 }
 
 /* Hero section */
+.hero-section {
+  padding: 272px 0;
+}
 .hero-title {
+  margin-bottom: 0;
+
   color: var(--color-primary-light);
 
   font-weight: 900;
@@ -77,6 +113,12 @@ address {
 }
 
 /* Traditions section */
+.traditaons-section {
+  padding-top: 96px;
+}
+.traditions-title {
+  padding-bottom: 42px;
+}
 .advantages-list {
   color: #faf4ea;
   background-color: var(--color-brand-light);
@@ -90,11 +132,17 @@ address {
   font-weight: 600;
 }
 /* Chefs section */
-.chef-title {
+.chefs-title {
+  padding-bottom: 80px;
+}
+.chefs-name {
   font-weight: 600;
   font-size: 40px;
 }
 /* Formats section */
+.formats-title {
+  padding-bottom: 80px;
+}
 .format-title {
   font-weight: 600;
   font-size: 24px;
@@ -102,6 +150,10 @@ address {
 .format-text {
   font-weight: 300;
   font-size: 14px;
+}
+/* Contact section */
+.contact-title {
+  padding-bottom: 16px;
 }
 /* Address */
 .address-item,
